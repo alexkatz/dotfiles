@@ -1,0 +1,13 @@
+# zsh plugins
+
+# zsh basic plugins
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
+
+# completions
+zsh-users/zsh-completions
+Aloxaf/fzf-tab
+
+# nvm
+lukechilds/zsh-nvm
+
