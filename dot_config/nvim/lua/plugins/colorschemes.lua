@@ -8,8 +8,6 @@ return {
     custom_highlights = function(colors)
       return {
         DiffDelete = { bg = 'none', fg = colors.overlay0 },
-        BlameLineNvim = { bg = 'none', fg = colors.surface1 },
-        Folded = { bg = 'none' },
       }
     end,
   },
