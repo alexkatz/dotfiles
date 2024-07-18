@@ -4,3 +4,4 @@
 
 vim.opt.listchars = 'space:·'
 vim.opt.fillchars = 'diff:╱'
+vim.opt.cursorline = false
