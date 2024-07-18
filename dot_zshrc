@@ -16,7 +16,7 @@ source <(fzf --zsh)
 eval $(ssh-agent)
 
 #bob path
-export PATH="$PATH:/Users/alexkatz/.local/share/bob/nvim-bin"
+export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
 
 export EDITOR=nvim
 
