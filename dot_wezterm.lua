@@ -92,7 +92,7 @@ config.underline_thickness = 1
 
 config.disable_default_key_bindings = true
 
-config.leader = { key = "Space", mods = "SHIFT", timeout_milliseconds = 1000 }
+config.leader = { key = "Space", mods = "ALT", timeout_milliseconds = 1000 }
 
 config.keys = {
 	-- move between split panes
