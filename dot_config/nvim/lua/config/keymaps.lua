@@ -18,17 +18,26 @@ vim.keymap.set({ 'i', 'v', 'n', 's' }, '<M-a>', '<cmd>wa<cr><esc>', { desc = 'Sa
 vim.keymap.set({ 'i', 'v', 'n', 's' }, '<M-BS>', '<C-w>', { desc = 'Delete word' })
 vim.keymap.set({ 'i', 'v', 'n', 's' }, '<C-BS>', '<C-w>', { desc = 'Delete word' })
 
--- Resize window using <option> hjkl
-vim.keymap.set('n', '<M-k>', '<cmd>resize +2<cr>', { desc = 'Increase window height' })
-vim.keymap.set('n', '<M-k>', '<cmd>resize -2<cr>', { desc = 'Decrease window height' })
-vim.keymap.set('n', '<M-l>', '<cmd>vertical resize -2<cr>', { desc = 'Decrease window width' })
-vim.keymap.set('n', '<M-h>', '<cmd>vertical resize +2<cr>', { desc = 'Increase window width' })
+-- Resize window using <option>+arrows
+vim.keymap.set('n', '<M-Up>', '<cmd>resize +2<cr>', { desc = 'Increase window height' })
+vim.keymap.set('n', '<M-Down>', '<cmd>resize -2<cr>', { desc = 'Decrease window height' })
+vim.keymap.set('n', '<M-Left>', '<cmd>vertical resize -2<cr>', { desc = 'Decrease window width' })
+vim.keymap.set('n', '<M-Right>', '<cmd>vertical resize +2<cr>', { desc = 'Increase window width' })
 
+-- save buffer or all buffers
 vim.keymap.set('n', '<leader>bw', '<cmd>w<cr>', { desc = 'Save Buffer' })
 vim.keymap.set('n', '<leader>bW', '<cmd>wa<cr>', { desc = 'Save All Buffers' })
 
+-- delete window
+vim.keymap.set('n', '<leader>wd', '<cmd>q<cr>', { desc = 'Delete Window' })
+
+-- escape to clear hlsearch
+vim.keymap.set({ 'i', 'n' }, '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and Clear hlsearch' })
+
+-- close all other windows
 vim.keymap.set('n', '<leader>wo', '<cmd>only<cr>', { desc = 'Close Other Windows' })
 
+-- close non-visible buffers
 vim.keymap.set('n', '<leader>bo', function()
   local vis_buffers = {}
   local wins = vim.api.nvim_list_wins()

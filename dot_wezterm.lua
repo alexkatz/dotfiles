@@ -224,6 +224,12 @@ config.keys = {
 		mods = "LEADER",
 		action = wezterm.action.Search({ CaseInSensitiveString = "" }),
 	},
+
+	-- increase font size
+	{ key = "+", mods = "CMD", action = wezterm.action.IncreaseFontSize },
+
+	-- decrease font size
+	{ key = "-", mods = "CMD", action = wezterm.action.DecreaseFontSize },
 }
 
 return config
