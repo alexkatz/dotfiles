@@ -65,7 +65,7 @@ local function split_nav(resize_or_move, key)
 end
 
 config.audible_bell = "Disabled"
-
+config.default_cursor_style = "SteadyBar"
 config.color_scheme = "Catppuccin Macchiato"
 
 config.tab_bar_at_bottom = true
