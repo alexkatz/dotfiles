@@ -13,20 +13,29 @@ return {
       width_preview = 100,
     }
   end,
-  keys = {
-    {
-      '<leader>e',
-      function()
-        require('mini.files').open(vim.api.nvim_buf_get_name(0), true)
+  keys = function()
+    vim.api.nvim_create_autocmd('User', {
+      pattern = 'MiniFilesBufferCreate',
+      callback = function(args)
+        local buf_id = args.data.buf_id
+
+        vim.keymap.set('n', '<esc>', function()
+          require('mini.files').close()
+        end, { buffer = buf_id, desc = 'Close Mini Files' })
       end,
-      desc = 'Open mini.files ',
-    },
-    {
-      '<esc>',
-      function()
-        require('mini.files').close()
-      end,
-      desc = 'Close mini.files',
-    },
-  },
+    })
+
+    return {
+      {
+        '<leader>e',
+        function()
+          local MiniFiles = require('mini.files')
+          if not MiniFiles.close() then
+            MiniFiles.open(vim.api.nvim_buf_get_name(0), true)
+          end
+        end,
+        desc = 'Open mini.files ',
+      },
+    }
+  end,
 }

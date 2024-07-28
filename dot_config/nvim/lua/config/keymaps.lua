@@ -31,9 +31,6 @@ vim.keymap.set('n', '<leader>bW', '<cmd>wa<cr>', { desc = 'Save All Buffers' })
 -- delete window
 vim.keymap.set('n', '<leader>wd', '<cmd>q<cr>', { desc = 'Delete Window' })
 
--- escape to clear hlsearch
-vim.keymap.set({ 'i', 'n' }, '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and Clear hlsearch' })
-
 -- close all other windows
 vim.keymap.set('n', '<leader>wo', '<cmd>only<cr>', { desc = 'Close Other Windows' })
 
