@@ -4,7 +4,6 @@ return {
     local to_install = {
       'eslint-lsp',
       'stylua',
-      'rustfmt',
       'beautysh',
       'yamlfmt',
       'lua-language-server',

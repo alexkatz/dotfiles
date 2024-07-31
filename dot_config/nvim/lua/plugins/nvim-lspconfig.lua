@@ -4,18 +4,12 @@ return {
     inlay_hints = { enabled = false },
     servers = {
       tailwindcss = {
-        handlers = {
-          ['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers['textDocument/hover'], {
-            silent = true,
-          }),
-        },
         settings = {
           tailwindCSS = {
             experimental = {
               classRegex = {
-                { 'classed(?:\\.\\w*)?\\(([^)]*)\\)', '["\'`]([^"\'`]*).*?["\'`]' },
-                { 'twMerge\\(([^)]*)\\)', "(?:'|\"|`)([^']*)(?:'|\"|`)" },
                 { 'tw\\(([^)]*)\\)', "(?:'|\"|`)([^']*)(?:'|\"|`)" },
+                { 'tw\\(([^)]*)\\)', '["\'`]([^"\'`]*).*?["\'`]' },
                 '(?:[a-z]ClassName)=\\s*(?:"|\')([^(?:"|\')]*)',
               },
             },
