@@ -1,20 +1,21 @@
 local open_diff_view = function()
-  require('fzf-lua').git_branches({
-    actions = {
-      ['default'] = function(selected)
-        local selection = selected[1]
-
-        local current_branch_char = string.find(selection, '*')
-        if current_branch_char ~= nil then
-          selection = string.sub(selection, 3)
-        end
-
-        selection = vim.trim(selection)
-
-        require('diffview').open({ selection })
-      end,
-    },
-  })
+  require('diffview').open({ 'development' })
+  -- require('fzf-lua').git_branches({
+  --   actions = {
+  --     ['default'] = function(selected)
+  --       local selection = selected[1]
+  --
+  --       local current_branch_char = string.find(selection, '*')
+  --       if current_branch_char ~= nil then
+  --         selection = string.sub(selection, 3)
+  --       end
+  --
+  --       selection = vim.trim(selection)
+  --
+  --       require('diffview').open({ selection })
+  --     end,
+  --   },
+  -- })
 end
 
 return {

@@ -170,6 +170,11 @@ config.keys = {
 		mods = "LEADER",
 		action = wezterm.action.TogglePaneZoomState,
 	},
+	{
+		key = "/",
+		mods = "ALT",
+		action = wezterm.action.TogglePaneZoomState,
+	},
 
 	-- close pane
 	{

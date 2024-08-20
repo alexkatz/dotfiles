@@ -7,6 +7,6 @@
    1. Install [rustup](https://www.rust-lang.org/tools/install)
    2. Run `cargo install bob-nvim`
 5. Using Bob, install desired Neovim versions
-6. Using the newly installed instance of [zsh-nvm](https://github.com/lukechilds/zsh-nvm), install desired Node versions
+6. Using the newly installed instance of [fnm](https://github.com/Schniz/fnm), install desired Node versions
 7. Install [pnpm](https://pnpm.io/installation) via `corepack`
 8. I guess do [Bitbucket SSH stuff](https://support.atlassian.com/bitbucket-cloud/docs/configure-ssh-and-two-step-verification/) as well

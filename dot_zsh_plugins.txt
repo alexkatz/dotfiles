@@ -7,7 +7,3 @@ zsh-users/zsh-autosuggestions
 # completions
 zsh-users/zsh-completions
 Aloxaf/fzf-tab
-
-# nvm
-lukechilds/zsh-nvm
-
