@@ -74,7 +74,7 @@ config.use_fancy_tab_bar = false
 
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.90
-config.macos_window_background_blur = 50
+config.macos_window_background_blur = 20
 config.adjust_window_size_when_changing_font_size = false
 
 config.window_padding = {
