@@ -1,4 +1,5 @@
 {
+  "CopilotChat.nvim": { "branch": "canary", "commit": "5bf9c1ba31ad27313812b09782c089e34b51e399" },
   "LazyVim": { "branch": "main", "commit": "0137a110c14e1d72b59dbb82ba804b568cdc5b18" },
   "SchemaStore.nvim": { "branch": "main", "commit": "64aed5788796d1f241da0afbd096e6dd649694bd" },
   "blame_line.nvim": { "branch": "master", "commit": "a43ae872fd9d57daaabcbb565a7a30de679aecf4" },
@@ -28,6 +29,7 @@
   "mini.files": { "branch": "main", "commit": "6abe854f1410fc6aec69897a78b1db994c32d9c6" },
   "mini.hipatterns": { "branch": "main", "commit": "797cbdc893cdcc2f0fbc05a23b4dae238a1fb0ae" },
   "mini.icons": { "branch": "main", "commit": "54686be7d58807906cb2c8c2216e0bf9c044f19a" },
+  "mini.move": { "branch": "main", "commit": "4caa1c212f5ca3d1633d21cfb184808090ed74b1" },
   "mini.pairs": { "branch": "main", "commit": "7e834c5937d95364cc1740e20d673afe2d034cdb" },
   "mini.surround": { "branch": "main", "commit": "48a9795c9d352c771e1ab5dedab6063c0a2df037" },
   "noice.nvim": { "branch": "main", "commit": "ca2e3fea9fb080dcb79d9129d73dac631294fe79" },
