@@ -3,7 +3,7 @@
 name = Alex Katz
 email = 4224538+alexkatz@users.noreply.github.com
 [pull]
-	rebase = true
+	rebase = false
 
 [difftool]
   prompt = true
