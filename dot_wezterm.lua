@@ -77,6 +77,9 @@ config.window_background_opacity = 0.90
 config.macos_window_background_blur = 20
 config.adjust_window_size_when_changing_font_size = false
 
+config.animation_fps = 165
+config.max_fps = 165
+
 config.window_padding = {
 	left = 0,
 	right = 0,
