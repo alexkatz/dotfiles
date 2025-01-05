@@ -4,6 +4,7 @@ return {
   opts = {
     prefix = ' ',
     hl_group = 'BlameLineNvim',
+    show_in_insert = false,
   },
   keys = {
     { '<leader>ub', '<cmd>BlameLineToggle<cr>', desc = 'Toggle Blame Line' },
