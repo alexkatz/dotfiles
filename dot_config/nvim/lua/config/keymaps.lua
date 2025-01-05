@@ -43,11 +43,10 @@ vim.keymap.set('n', '<leader>bo', function()
     vis_buffers[buffer] = true
   end
 
-  local bufremove = require('mini.bufremove')
   local all_buffers = vim.api.nvim_list_bufs()
   for _, buf in ipairs(all_buffers) do
     if not vis_buffers[buf] then
-      bufremove.delete(buf)
+      Snacks.bufdelete.delete(buf)
     end
   end
 end, { desc = 'Close Hidden Buffers' })
