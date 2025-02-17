@@ -18,9 +18,6 @@ eval $(ssh-agent)
 #bob path
 export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
 
-# openjdk
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
 # nvim as editor
 export EDITOR=nvim
 
