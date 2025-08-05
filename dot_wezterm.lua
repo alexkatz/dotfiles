@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 
-local RATIO = 0.91
+local RATIO = 0.924
 
 local config = wezterm.config_builder()
 

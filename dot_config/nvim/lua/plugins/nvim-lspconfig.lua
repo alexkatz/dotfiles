@@ -6,11 +6,11 @@ return {
       tailwindcss = {
         settings = {
           tailwindCSS = {
+            classAttributes = { 'className' },
+            classFunctions = { 'tw' },
             experimental = {
               classRegex = {
-                { 'tw\\(([^)]*)\\)', "(?:'|\"|`)([^']*)(?:'|\"|`)" },
-                { 'tw\\(([^)]*)\\)', '["\'`]([^"\'`]*).*?["\'`]' },
-                '(?:[a-z]ClassName)=\\s*(?:"|\')([^(?:"|\')]*)',
+                { '(?:[a-zA-Z0-9]+ClassName)=\\s*(?:"|\')([^"\']*)(?:"|\')' },
               },
             },
           },
