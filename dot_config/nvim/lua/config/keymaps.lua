@@ -50,3 +50,48 @@ vim.keymap.set('n', '<leader>bo', function()
     end
   end
 end, { desc = 'Close Hidden Buffers' })
+
+if vim.g.vscode then
+  local vscode = require('vscode')
+  print(vscode)
+
+  vim.keymap.set('n', 'gd', function()
+    vscode.action('editor.action.revealDefinition')
+  end, { desc = 'Go to Definition' })
+
+  vim.keymap.set('n', 'gr', function()
+    vscode.action('editor.action.goToReferences')
+  end, { desc = 'Go to References' })
+
+  vim.keymap.set('n', '<leader>bd', function()
+    vscode.action('workbench.action.closeActiveEditor')
+  end, { desc = 'Close Active Editor' })
+
+  vim.keymap.set('n', '<leader>wd', function()
+    vscode.action('workbench.action.closeActiveEditor')
+  end, { desc = 'Close Active Editor' })
+
+  vim.keymap.set('n', '<leader>wv', function()
+    vscode.action('workbench.action.splitEditorRight')
+  end, { desc = 'Split Editor Right' })
+
+  vim.keymap.set('n', '<leader>ws', function()
+    vscode.action('workbench.action.splitEditorDown')
+  end, { desc = 'Split Editor Down' })
+
+  vim.keymap.set('n', '<leader>cr', function()
+    vscode.action('editor.action.rename')
+  end, { desc = 'Rename Variable' })
+
+  vim.keymap.set('n', ']d', function()
+    vscode.action('editor.action.marker.next')
+  end, { desc = 'Next Problem' })
+
+  vim.keymap.set('n', '[d', function()
+    vscode.action('editor.action.marker.prev')
+  end, { desc = 'Previous Problem' })
+
+  vim.keymap.set('n', '<leader>cu', function()
+    vscode.action('typescript.removeUnusedImports')
+  end, { desc = 'Remove Unused Imports' })
+end

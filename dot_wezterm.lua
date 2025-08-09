@@ -87,7 +87,7 @@ config.window_padding = {
 	bottom = 0,
 }
 
-config.font = wezterm.font("FiraCode Nerd Font", { weight = "DemiBold" })
+config.font = wezterm.font("FiraCode Nerd Font", { weight = 500 })
 config.font_size = 14.0
 
 config.underline_position = -5

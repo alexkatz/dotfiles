@@ -6,8 +6,12 @@ return {
       tailwindcss = {
         settings = {
           tailwindCSS = {
+            files = {
+              watch = '**/*.{css,scss}',
+            },
+            includeLanguages = { 'typescript', 'typescriptreact' },
             classAttributes = { 'className' },
-            classFunctions = { 'tw' },
+            classFunctions = { 'tw', 'classed' },
             experimental = {
               classRegex = {
                 { '(?:[a-zA-Z0-9]+ClassName)=\\s*(?:"|\')([^"\']*)(?:"|\')' },
