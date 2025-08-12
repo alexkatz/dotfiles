@@ -73,12 +73,12 @@ config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
 
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.90
+config.window_background_opacity = 0.80
 config.macos_window_background_blur = 20
 config.adjust_window_size_when_changing_font_size = false
 
-config.animation_fps = 165
-config.max_fps = 165
+config.animation_fps = 120
+config.max_fps = 120
 
 config.window_padding = {
 	left = 0,
@@ -87,7 +87,7 @@ config.window_padding = {
 	bottom = 0,
 }
 
-config.font = wezterm.font("FiraCode Nerd Font", { weight = 500 })
+config.font = wezterm.font("FiraCode Nerd Font Mono", { weight = 600 })
 config.font_size = 14.0
 
 config.underline_position = -5

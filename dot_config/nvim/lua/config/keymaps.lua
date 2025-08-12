@@ -55,6 +55,10 @@ if vim.g.vscode then
   local vscode = require('vscode')
   print(vscode)
 
+  vim.keymap.set('n', '<leader>e', function()
+    vscode.action('workbench.explorer.fileView.focus')
+  end, { desc = 'Open Explorer' })
+
   vim.keymap.set('n', 'gd', function()
     vscode.action('editor.action.revealDefinition')
   end, { desc = 'Go to Definition' })
@@ -94,4 +98,12 @@ if vim.g.vscode then
   vim.keymap.set('n', '<leader>cu', function()
     vscode.action('typescript.removeUnusedImports')
   end, { desc = 'Remove Unused Imports' })
+
+  vim.keymap.set('n', '<leader>wm', function()
+    vscode.action('workbench.action.toggleMaximizeEditorGroup')
+  end, { desc = 'Maximize Editor' })
+
+  vim.keymap.set('n', '<leader>wo', function()
+    vscode.action('workbench.action.closeEditorsInOtherGroups')
+  end, { desc = 'Close Other Editors' })
 end

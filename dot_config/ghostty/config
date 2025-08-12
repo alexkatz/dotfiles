@@ -1,0 +1,40 @@
+# nightly channel
+auto-update-channel = tip
+
+# theme
+theme = catppuccin-mocha
+split-divider-color = #585b70
+
+# font
+font-family = "FiraCode Nerd Font"
+font-size = 16
+font-thicken = true
+font-thicken-strength = 255
+
+
+# background
+background-opacity = 0.8
+background-blur = 40
+
+
+# macos/window
+macos-option-as-alt = true
+macos-titlebar-style = transparent
+
+window-save-state = always
+maximize = true
+
+mouse-hide-while-typing = true
+
+
+# cursor
+cursor-opacity = 1
+custom-shader = shaders/cursor_smear.glsl
+
+
+# quick terminal
+quick-terminal-position = center
+
+
+# keybinds
+keybind = performable:cmd+/=toggle_quick_terminal
