@@ -18,12 +18,10 @@ background-blur = 40
 
 
 # macos/window
+macos-titlebar-style = tabs
 macos-option-as-alt = true
-macos-titlebar-style = transparent
-
 window-save-state = always
 maximize = true
-
 mouse-hide-while-typing = true
 
 
@@ -33,7 +31,7 @@ custom-shader = shaders/cursor_smear.glsl
 
 
 # quick terminal
-quick-terminal-position = center
+quick-terminal-position = bottom
 
 
 # keybinds

@@ -52,8 +52,9 @@ vim.keymap.set('n', '<leader>bo', function()
 end, { desc = 'Close Hidden Buffers' })
 
 if vim.g.vscode then
+  ---@class VSCode
+  ---@field action fun(command: string): nil
   local vscode = require('vscode')
-  print(vscode)
 
   vim.keymap.set('n', '<leader>e', function()
     vscode.action('workbench.explorer.fileView.focus')
