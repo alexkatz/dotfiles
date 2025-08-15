@@ -64,16 +64,10 @@ vec4 saturate(vec4 color, float factor) {
     return mix(vec4(gray), color, factor);
 }
 
-// Colors of capuccino-mocha
-//const vec4 TRAIL_COLOR = vec4(0.796, 0.651, 0.969, 1.0); //Mauve #cba6f7
-//const vec4 TRAIL_COLOR = vec4(0.706, 0.745, 0.996, 1.0); //Lavander #b4befe
-// const vec4 TRAIL_COLOR = vec4(0.537, 0.706, 0.980, 1.0); //Blue #89b4fa
-// const vec4 TRAIL_COLOR = vec4(0.651, 0.890, 0.631, 1.0); //Green #a6e3a1
-// const vec4 TRAIL_COLOR = vec4(0.980, 0.702, 0.529, 1.0); //Peach #fab387
 vec4 TRAIL_COLOR = iCurrentCursorColor;
 
 const float OPACITY = 0.6;
-const float DURATION = 0.3; //IN SECONDS
+const float DURATION = 0.2; //IN SECONDS
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
 {
@@ -114,7 +108,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
     vec4 newColor = vec4(fragColor);
 
     vec4 trail = TRAIL_COLOR;
-    trail = saturate(trail, 2.5);
+    // trail = saturate(trail, 2.5);
     // Draw trail
     newColor = mix(newColor, trail, antialising(sdfTrail));
     // Draw current cursor
