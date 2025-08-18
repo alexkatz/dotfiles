@@ -12,9 +12,6 @@ eval "$(starship init zsh)"
 # fzf
 source <(fzf --zsh)
 
-# ssh
-eval $(ssh-agent)
-
 #bob path
 export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
 
@@ -48,3 +45,8 @@ zstyle ':fzf-tab:*' switch-group '<' '>'
 bindkey "\e[1;3D" backward-word     # ⌥←
 bindkey "\e[1;3C" forward-word      # ⌥→
 
+# Beam cursor from neovim terminals
+if [[ -n $NVIM ]]; then
+  # We're inside a neovim :terminal
+  printf '\e[6 q'  # beam cursor
+fi

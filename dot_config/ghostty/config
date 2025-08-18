@@ -27,8 +27,8 @@ mouse-hide-while-typing = true
 
 # cursor
 cursor-opacity = 1
+cursor-style-blink = false
 custom-shader = shaders/cursor_smear.glsl
-
 
 # quick terminal
 quick-terminal-position = bottom

@@ -34,7 +34,7 @@ vim.keymap.set('n', '<leader>wd', '<cmd>q<cr>', { desc = 'Delete Window' })
 -- close all other windows
 vim.keymap.set('n', '<leader>wo', '<cmd>only<cr>', { desc = 'Close Other Windows' })
 
--- close non-visible buffers
+-- close non-visible buffers, excluding terminal buffers
 vim.keymap.set('n', '<leader>bo', function()
   local vis_buffers = {}
   local wins = vim.api.nvim_list_wins()
@@ -45,7 +45,7 @@ vim.keymap.set('n', '<leader>bo', function()
 
   local all_buffers = vim.api.nvim_list_bufs()
   for _, buf in ipairs(all_buffers) do
-    if not vis_buffers[buf] then
+    if not vis_buffers[buf] and vim.bo[buf].buftype ~= 'terminal' then
       Snacks.bufdelete.delete(buf)
     end
   end
