@@ -3,6 +3,7 @@
 # zsh basic plugins
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-autosuggestions
+jeffreytse/zsh-vi-mode
 
 # completions
 zsh-users/zsh-completions
