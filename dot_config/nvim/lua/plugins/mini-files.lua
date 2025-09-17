@@ -1,5 +1,5 @@
 return {
-  'echasnovski/mini.files',
+  'nvim-mini/mini.files',
   opts = function(_, opts)
     opts.windows = {
       max_number = math.huge,

@@ -2,14 +2,13 @@
 auto-update-channel = tip
 
 # theme
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 split-divider-color = #585b70
 
 # font
 font-family = "FiraCode Nerd Font"
 font-size = 16
 font-thicken = true
-font-thicken-strength = 255
 
 
 # background
@@ -29,6 +28,7 @@ mouse-hide-while-typing = true
 cursor-opacity = 1
 cursor-style-blink = false
 custom-shader = shaders/cursor_smear.glsl
+# custom-shader = shaders/cursor_blaze_no_trail.glsl
 
 # quick terminal
 quick-terminal-position = bottom
