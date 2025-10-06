@@ -34,16 +34,6 @@ vim.keymap.set('n', '<leader>wd', '<cmd>q<cr>', { desc = 'Delete Window' })
 -- close all other windows
 vim.keymap.set('n', '<leader>wo', '<cmd>only<cr>', { desc = 'Close Other Windows' })
 
--- flash incremental selection
-vim.keymap.set({ 'n', 'x', 'o' }, '<M-v>', function()
-  require('flash').treesitter({
-    actions = {
-      ['<M-v>'] = 'next',
-      ['<BS>'] = 'prev',
-    },
-  })
-end, { desc = 'Treesitter incremental selection' })
-
 -- close non-visible buffers, excluding terminal buffers
 vim.keymap.set('n', '<leader>bo', function()
   local vis_buffers = {}
