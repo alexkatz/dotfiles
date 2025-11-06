@@ -7,3 +7,5 @@ vim.o.fillchars = 'diff:╱'
 vim.o.cursorline = false
 vim.o.swapfile = false
 -- vim.o.winborder = 'rounded'
+--
+vim.g.ai_cmp = false
