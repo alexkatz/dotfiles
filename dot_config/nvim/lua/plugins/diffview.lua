@@ -7,6 +7,7 @@ return {
       '<leader>gG',
       function()
         Snacks.picker.git_branches({
+          all = true,
           confirm = function(_, item)
             require('diffview').open({ item.branch })
           end,
