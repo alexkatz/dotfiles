@@ -58,3 +58,4 @@ if [[ -n $NVIM ]]; then
   printf '\e[6 q'  # beam at startup
 fi
 
+export PATH="$HOME/.local/bin:$PATH"
