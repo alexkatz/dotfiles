@@ -5,7 +5,6 @@ return {
     scroll = { enabled = false },
     bufdelete = { enabled = true },
     picker = {
-
       win = {
         -- input window
         input = {

@@ -3,6 +3,10 @@ return {
   opts = {
     inlay_hints = { enabled = false },
     servers = {
+      -- copilot.lua handles its own LSP server, disable this to avoid conflicts
+      copilot = {
+        enabled = false,
+      },
       tailwindcss = {
         settings = {
           tailwindCSS = {
