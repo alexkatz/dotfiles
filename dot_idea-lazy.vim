@@ -222,9 +222,9 @@ nmap <C-/> <Action>(ActivateTerminalToolWindow)
 " nmap <C-_> 'There is no equivalent mapping for <c-_>.'<cr>
 " Hide Terminal - terminal mode maps not possible
 " Split Window Below.  :split<cr> doesn't work.
-nmap <leader>- <c-w>s
+nmap <leader>ws <c-w>s
 " Split Window Right
-nmap <leader><bar> <c-w>v
+nmap <leader>wv <c-w>v
 " Delete Window
 nmap <leader>wd <Action>(CloseContent)
 " Toggle Maximize

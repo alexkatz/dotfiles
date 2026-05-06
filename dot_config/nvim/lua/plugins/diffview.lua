@@ -2,7 +2,7 @@ return {
   'sindrets/diffview.nvim',
   dependencies = 'nvim-lua/plenary.nvim',
   keys = {
-    { '<leader>gd', '<cmd>DiffviewOpen<cr>', desc = 'Diff workspace changes' },
+    { '<leader>gv', '<cmd>DiffviewOpen<cr>', desc = 'Diff workspace changes' },
     -- {
     --   '<leader>gG',
     --   function()

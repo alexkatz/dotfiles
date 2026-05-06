@@ -23,7 +23,7 @@ require('lazy').setup({
     -- lazy = false,
     version = false, -- always use the latest git commit
   },
-  install = { colorscheme = { 'tokyonight', 'catppuccin' } },
+  install = { colorscheme = { 'tokyonight', 'catppuccin-nvim' } },
   checker = { enabled = true }, -- automatically check for plugin updates
   rtp = {
     -- disable some rtp plugins
