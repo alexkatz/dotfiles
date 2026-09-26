@@ -11,3 +11,5 @@ email = 4224538+alexkatz@users.noreply.github.com
   tool = nvimdiff
 [difftool "nvimdiff"]
   cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[init]
+	defaultBranch = main
