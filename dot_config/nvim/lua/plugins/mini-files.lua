@@ -9,6 +9,11 @@ return {
       width_preview = 120,
     }
 
+    -- mini.files' built-in LSP file operations duplicate the Snacks.rename
+    -- autocmds (LazyVim's MiniFilesActionRename + MiniFilesActionMove below),
+    -- applying willRenameFiles edits twice and corrupts import paths
+    opts.options = vim.tbl_deep_extend('force', opts.options or {}, { lsp_timeout = 0 })
+
     vim.api.nvim_create_autocmd('User', {
       pattern = 'MiniFilesBufferCreate',
       callback = function(event)

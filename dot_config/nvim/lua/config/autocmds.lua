@@ -15,3 +15,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
   end,
 })
+
+-- Open help windows in a vertical split on the right
+vim.api.nvim_create_autocmd('BufWinEnter', {
+  callback = function(args)
+    if vim.bo[args.buf].buftype == 'help' then
+      vim.cmd.wincmd('L')
+    end
+  end,
+})

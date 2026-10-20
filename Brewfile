@@ -15,9 +15,14 @@ brew "ripgrep"
 brew "starship"
 brew "tree"
 brew "zoxide"
+
+# Official Language Server Protocol for the Kotlin language
+brew "kotlin-lsp"
+
 cask "docker-desktop"
 cask "font-fira-code-nerd-font"
 cask "ghostty"
+
 vscode "ast-grep.ast-grep-vscode"
 vscode "asvetliakov.vscode-neovim"
 vscode "bradlc.vscode-tailwindcss"
