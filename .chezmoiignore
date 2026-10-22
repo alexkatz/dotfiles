@@ -1,0 +1,6 @@
+# Target paths, relative to ~. Only read from the source root.
+**/.DS_Store
+.config/nvim/lazy-lock.json
+.config/nvim/noice.log
+# age identity for encrypted entries -- must never be committed
+.config/chezmoi
