@@ -61,7 +61,7 @@ return {
       end,
     })
 
-    -- saving an encrypted target, also through a symlink such as ~/Developer/run-local.sh
+    -- saving an encrypted target, also through a symlink such as ~/Developer/run-dms.sh
     vim.api.nvim_create_autocmd('BufWritePost', {
       group = group,
       callback = function(event)
